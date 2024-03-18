@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  background: $darkBlue;
+  height: 70px;
+  padding-top: 17px;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-menu {
+    display: flex;
+    align-items: center;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: $finger-size;
+      &:hover:not(.main-btn){
+        background-color: rgba($color: #fff, $alpha: .2);
+        border-radius: $border-radius;
+      }
+    }
+    &-user {
+      a{
+        background-color: #fff;
+        color: $darkBlue;
+        border-radius: $border-radius;
+        font-size: 14px;
+      }
+  
+    }
+  }
+}
+.header-logo {
+  font-size: 30px;
+  color: blue;
+}
